@@ -31,7 +31,7 @@ describe("Manager class", function () {
   it("should create an object with an attribute called - employees that is initialized with an empty array", function () {
     expect(manager.employees).toEqual(jasmine.any(Array));
   });
-  it("should have a function called - hireEmpoyee that pushes a new employee to the employees array", function () {
+  it("should have a function called - hireEmployee that pushes a new employee to the employees array", function () {
     manager.employees.length = 0;
     manager.hireEmployee("Hadas");
     expect(manager.employees[0].name).toEqual("Hadas");
